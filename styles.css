@@ -1,0 +1,86 @@
+﻿.align-right{
+    text-align:right;
+}
+body {
+    margin:0px;
+    padding:0px;
+}
+
+.drag-container{
+    background-color:red;
+    /*position: absolute;
+    top:0px;
+    left: -300px;*/
+    height:100px;
+    border-bottom:1px solid gray;
+    overflow:hidden;
+    padding:0px;
+}
+#deleteConfirmation{
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius:4px;
+    padding:20px;
+    position: absolute;
+    left:100px;
+    top:50px;
+    z-index:10;
+}
+.hidden{
+    display:none;
+}
+.mobile-dialog{
+    border:2px solid gray;
+    border-radius:8px;
+    font-size:18px;
+}
+.mobile-dialog-btn{
+    border-width: 0px;
+    font-size:18px;
+    font-weight:bold;
+    padding:8px;
+}
+.mobile-page-title{
+    background-color:rgb(0,102,153);
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    height:34px;
+    padding:8px;
+}
+.mobile-nav{
+    border-bottom:1px solid gray;
+    font-size:24px;
+    height:34px;
+    padding:8px;
+}
+.mobile-note-title{
+    font-size:18px;
+    font-weight:bold
+}
+.mobile-note-text{
+    font-size:16px;
+}
+.swipe-target{
+    background-color:white;
+    display:inline-block;
+    /*position:absolute;
+    left:0px;*/
+    height:100px;
+    width:100%;
+}
+.swipe-target:hover{
+    background-color:lightblue;
+}.table {
+    display:table;
+    width:100%;
+}
+.table-row {
+    display:table-row;
+}
+.table-cell{
+
+    display:table-cell;
+    margin:8px;
+    vertical-align:top;
+}

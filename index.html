@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Swipe Spike</title>
+	<meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div style="position:relative;width:400px">
+        <div id="header" style="position:relative;width:400px"></div>
+        <div class="table" style="position:relative;width:400px">
+            <div class="table-row mobile-page-title" id="title" style="position:relative;width:400px;">
+                <div class="table-cell" style="position:relative;">NOTES</div>
+                <div class="table-cell align-right" id="noteCount" style="position:relative;">(3)</div>
+            </div>
+            <div class="table-row mobile-nav" id="nav" style="position:relative;;width:400px">
+                <div class="table-cell" style="position:relative;"><img src="newNote.png" style="position:relative;" /></div>
+                <div class="table-cell align-right" style="position:relative;"><a href="javascript:editNote()" style="position:relative;">Edit</a></div>
+            </div>
+        </div>
+        <div id="notesList" style="position:relative;width:400px"></div>
+        <div id="deleteConfirmation" class="mobile-dialog hidden">
+            <div>Are you sure you want to delete your note(s)?</div>
+            <div>
+                <button class="mobile-dialog-btn" onclick="deleteNote()">Delete</button>
+                <button class="mobile-dialog-btn" onclick="cancelDelete()">Cancel</button>
+            </div>
+        </div>
+    </div> 
+    <script src="https://code.jquery.com/jquery-2.2.2.js" integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE=" crossorigin="anonymous"></script>  
+    <script src="notesList.js"></script>
+    <script src="notes.js"></script>
+    <script src="swipe.js"></script>
+    <script>
+        $(document).ready(function () {
+            loadNotes();
+        })
+    </script>
+</body>
+</html>
