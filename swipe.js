@@ -21,14 +21,18 @@ var swipeeLeft = null;
     notesContainer.addEventListener('touchmove', handleTouchMove, false);
 
     function handleTouchStart(evt) {
-        swipee = evt.touches[0].target;
-        if (swipee.className === 'swipe-target') {
-            swipeeId = swipee.id;
-            var swipeePos = $('#' + swipeeId).position();
-            swipeeLeft = swipeePos.left;
-            xDown = evt.touches[0].clientX;
-            evt.preventDefault();
-        }
+        var touchObj = evt.touches[0].target;
+
+        if (touchObj.className != 'swipe-target')
+            swipee = touchObj.parentElement;
+        else 
+            swipee = touchObj 
+
+        swipeeId = swipee.id;
+        var swipeePos = $('#' + swipeeId).position();
+        swipeeLeft = swipeePos.left;
+        xDown = evt.touches[0].clientX;
+        evt.preventDefault();
     };
 
     function handleTouchEnd(evt) {
