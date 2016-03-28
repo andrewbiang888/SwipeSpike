@@ -49,23 +49,30 @@ body {
 }
 .mobile-page-title{
     background-color:rgb(0,102,153);
+    height:34px;
+}
+.mobile-page-title-text{
     color:white;
     font-size:24px;
     font-weight:bold;
-    height:34px;
-    padding:8px;
-}
+    margin:8px;
+ }
 .mobile-nav{
     border-bottom:1px solid gray;
     font-size:24px;
     padding:8px;
 }
+.mobile-nav-btn{
+    margin:8px;
+}
 .mobile-note-title{
     font-size:20px;
-    font-weight:bold
+    font-weight:bold;
+    margin:8px;
 }
 .mobile-note-text{
     font-size:18px;
+    margin:8px;
 }
 .swipe-target{
     background-color:white;
@@ -87,6 +94,5 @@ body {
 .table-cell{
 
     display:table-cell;
-    margin:8px;
     vertical-align:top;
 }
